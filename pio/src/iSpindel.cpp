@@ -816,7 +816,7 @@ bool isDS18B20ready()
 void initAccel()
 {
   // join I2C bus (I2Cdev library doesn't do this automatically)
-  Wire.begin(D3, D4);
+  Wire.begin(4, 5);
   Wire.setClock(100000);
   Wire.setClockStretchLimit(2 * 230);
 
